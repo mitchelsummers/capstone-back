@@ -1,4 +1,6 @@
 class CoursesController < ApplicationController
+  # before_action :authenticate_admin, except: [:index, :show]
+
   def index
     courses = Course.all
     render json: courses

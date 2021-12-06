@@ -1,0 +1,27 @@
+### INDEX courses
+
+GET http://localhost:3000/courses
+Content-Type: application/json
+
+### SHOW courses
+
+GET http://localhost:3000/courses/:id
+Content-Type: application/json
+
+### CREATE courses
+
+POST http://localhost:3000/courses
+Authorization: Bearer 
+Content-Type: application/json
+
+### UPDATE courses
+
+PATCH http://localhost:3000/courses/:id
+Authorization: Bearer 
+Content-Type: application/json
+
+### DESTROY courses
+
+DELETE http://localhost:3000/courses/:id
+Authorization: Bearer 
+Content-Type: application/json

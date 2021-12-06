@@ -1,0 +1,44 @@
+### INDEX users
+
+GET http://localhost:3000/users
+Authorization: Bearer 
+Content-Type: application/json
+
+### SHOW users
+
+GET http://localhost:3000/users/:id
+Authorization: Bearer 
+Content-Type: application/json
+
+### CREATE users
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "user_name": "Test name",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### UPDATE users
+
+PATCH http://localhost:3000/users/:id
+Authorization: Bearer 
+Content-Type: application/json
+
+### DESTROY users
+
+DELETE http://localhost:3000/users/:id
+Authorization: Bearer 
+Content-Type: application/json
+
+### SESSIONS create
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}

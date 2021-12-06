@@ -1,0 +1,29 @@
+### INDEX players
+
+GET http://localhost:3000/players
+Authorization: Bearer 
+Content-Type: application/json
+
+### SHOW players
+
+GET http://localhost:3000/players/:id
+Authorization: Bearer 
+Content-Type: application/json
+
+### CREATE players
+
+POST http://localhost:3000/players
+Authorization: Bearer 
+Content-Type: application/json
+
+### UPDATE players
+
+PATCH http://localhost:3000/players/:id
+Authorization: Bearer 
+Content-Type: application/json
+
+### DESTROY players
+
+DELETE http://localhost:3000/players/:id
+Authorization: Bearer 
+Content-Type: application/json
