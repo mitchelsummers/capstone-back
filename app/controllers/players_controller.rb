@@ -1,6 +1,6 @@
 class PlayersController < ApplicationController
   def index
-    players = Player.all
+    players = Player.where
     render json: players
   end
 
@@ -12,7 +12,7 @@ class PlayersController < ApplicationController
   def create 
     player = Player.new(
     user_id = params[:user_id],
-    course_id = params[:course_id]
+    card_id = params[:card_id]
   )
   if player.save
     render json: player

@@ -1,0 +1,43 @@
+### INDEX cards
+
+GET http://localhost:3000/cards
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2Mzg5MDMyNzh9.qsjhQsmkXJEPAyX_YMK3wW1jAuzdNUbB2jTi_p3xHj8
+Content-Type: application/json
+
+### SHOW cards
+
+GET http://localhost:3000/cards/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2Mzg5MDMyNzh9.qsjhQsmkXJEPAyX_YMK3wW1jAuzdNUbB2jTi_p3xHj8
+Content-Type: application/json
+
+### CREATE cards
+
+POST http://localhost:3000/cards
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2Mzg5MDMyNzh9.qsjhQsmkXJEPAyX_YMK3wW1jAuzdNUbB2jTi_p3xHj8
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "month": "December",
+  "day": "15",
+  "time": "12:30",
+  "privacy": true,
+  "course_id": 1
+}
+
+
+### UPDATE cards
+
+PATCH http://localhost:3000/cards/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2Mzg5MDMyNzh9.qsjhQsmkXJEPAyX_YMK3wW1jAuzdNUbB2jTi_p3xHj8
+Content-Type: application/json
+
+{
+  "name": "Test name 2"
+}
+
+### DESTROY cards
+
+DELETE http://localhost:3000/cards/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2Mzg5MDMyNzh9.qsjhQsmkXJEPAyX_YMK3wW1jAuzdNUbB2jTi_p3xHj8
+Content-Type: application/json

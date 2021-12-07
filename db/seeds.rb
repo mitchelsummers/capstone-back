@@ -12,12 +12,14 @@
 #   user_name 
 #   password_digest 
 #   skill_level
+#   admin:boolean
 # model Course 
 #   name:string 
 #   address:string 
 #   hole_count:integer 
 #   course_par:integer 
 #   rating:integer
+#   image:string
 # model Card 
 #   name:string 
 #   month:string 
@@ -29,3 +31,17 @@
 # model Player 
 #   user_id:integer 
 #   card_id:integer
+
+   
+Coourse.create!([
+  {name: "West Fork Disc Golf Course", adress: "", hole_count: , course_par: , rating: 4.1, image: ""},
+  {name: "", adress: "", hole_count: , course_par: , rating: 3, image: ""},
+  {name: "", adress: "", hole_count: , course_par: , rating: 3, image: ""},
+  {name: "", adress: "", hole_count: , course_par: , rating: 3, image: ""},
+  {name: "", adress: "", hole_count: , course_par: , rating: 3, image: ""},
+  {name: "", adress: "", hole_count: , course_par: , rating: 3, image: ""},
+  {name: "", adress: "", hole_count: , course_par: , rating: 3, image: ""},
+  {name: "", adress: "", hole_count: , course_par: , rating: 3, image: ""},
+  {name: "", adress: "", hole_count: , course_par: , rating: 3, image: ""},
+  {name: "", adress: "", hole_count: , course_par: , rating: 3, image: ""}
+])

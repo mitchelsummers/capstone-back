@@ -1,11 +1,13 @@
 class CardsController < ApplicationController
+  before_action :authenticate_user
+
   def index
-    cards = Card.all
+    cards = Card.where(user_id: current_user.id)
     render json: cards
   end
 
   def show
-    card = Card.find_by(id: params[:id])
+    card = Card.where(user_id: current_user.id).find_by(id: params[:id])
     render json: card
   end
 
@@ -17,7 +19,7 @@ class CardsController < ApplicationController
       time: params[:time],
       privacy: params[:privacy],
       course_id: params[:course_id],
-      user_id: params[:user_id]
+      user_id: current_user.id
     )
     if card.save
       render json: card
