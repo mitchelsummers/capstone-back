@@ -11,13 +11,14 @@ class PlayersController < ApplicationController
 
   def create 
     player = Player.new(
-    user_id = params[:user_id],
-    card_id = params[:card_id]
-  )
-  if player.save
-    render json: player
-  else
-    render json: { errors: player.errors.full_messages }, status: :bad_request
+      user_id: params[:user_id],
+      card_id: params[:card_id]
+    )
+    if player.save
+      render json: player
+    else
+      render json: { errors: player.errors.full_messages }, status: :bad_request
+    end
   end
 
   def update
@@ -29,11 +30,11 @@ class PlayersController < ApplicationController
     else
       render json: { errors: player.errors.full_messages }, status: :bad_request
     end
+  end
 
-    def destroy
-      player = Player.find_by(id: params[:id])
-      player.destroy
-      render json: { message: "Player Deleted" }
-    end
+  def destroy
+    player = Player.find_by(id: params[:id])
+    player.destroy
+    render json: { message: "Player Deleted" }
   end
 end
