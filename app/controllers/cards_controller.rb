@@ -7,7 +7,7 @@ class CardsController < ApplicationController
   end
 
   def show
-    card = Card.where(user_id: current_user.id).find_by(id: params[:id])
+    card = Card.find_by(id: params[:id])
     render json: card
   end
 

@@ -1,6 +1,6 @@
 class PlayersController < ApplicationController
   def index
-    players = Player.where
+    players = Player.where(card_id: params[:card_id])
     render json: players
   end
 
