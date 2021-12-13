@@ -1,8 +1,18 @@
 class CardsController < ApplicationController
-  before_action :authenticate_user
+  before_action :authenticate_user, except: [:index, :course_index, :show] 
 
   def index
+    cards = Card.all
+    render json: cards
+  end
+
+  def user_index
     cards = Card.where(user_id: current_user.id)
+    render json: cards
+  end
+
+  def course_index
+    cards = Card.where(course_id: params[:id])
     render json: cards
   end
 

@@ -1,20 +1,31 @@
 ### INDEX players
 
-GET http://localhost:3000/players
-Authorization: Bearer 
+GET http://localhost:3000/players/
 Content-Type: application/json
+
+### INDEX card_players
+
+GET http://localhost:3000/cardplayers/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2Mzk1MDQ1ODJ9.bKgMlRDJYms2fAekDyxsNWZoOHHh9AmoTvWwCtAYKfI
+Content-Type: application/json
+
 
 ### SHOW players
 
-GET http://localhost:3000/players/:id
-Authorization: Bearer 
+GET http://localhost:3000/players/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2Mzk1MDQ1ODJ9.bKgMlRDJYms2fAekDyxsNWZoOHHh9AmoTvWwCtAYKfI
 Content-Type: application/json
 
 ### CREATE players
 
 POST http://localhost:3000/players
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2Mzk1MDQ1ODJ9.bKgMlRDJYms2fAekDyxsNWZoOHHh9AmoTvWwCtAYKfI
 Content-Type: application/json
+
+{
+  "user_id": 4,
+  "card_id": 3
+}
 
 ### UPDATE players
 

@@ -1,12 +1,17 @@
 class PlayersController < ApplicationController
   def index
-    players = Player.where(card_id: params[:card_id])
+    players = Player.all
+    render json: players
+  end
+
+  def card_index
+    players = Player.where(card_id: params[:id])
     render json: players
   end
 
   def show
     player = Player.find_by(id: params[:id])
-    render json: product
+    render json: player
   end
 
   def create 

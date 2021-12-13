@@ -14,12 +14,15 @@ Rails.application.routes.draw do
   delete "courses/:id" => "courses#destroy"
 
   get "/cards" => "cards#index"
+  get "/coursecards/:id" => "cards#course_index"
+  get "/usercards" => "cards#user_index"
   get "/cards/:id" => "cards#show"
   post "/cards" => "cards#create"
   patch "/cards/:id" => "cards#update"
   delete "cards/:id" => "cards#destroy"
 
   get "/players" => "players#index"
+  get "/cardplayers/:id" => "players#card_index"
   get "/players/:id" => "players#show"
   post "/players" => "players#create"
   patch "/players/:id" => "players#update"
