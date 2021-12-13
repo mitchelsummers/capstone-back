@@ -6,6 +6,11 @@ class UsersController < ApplicationController
     render json: users
   end
 
+  def home
+    user = User.find_by(id: current_user.id)
+    render json: user
+  end
+
   def show
     user = User.find_by(id: params[:id])
     render json: user
