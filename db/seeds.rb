@@ -33,7 +33,7 @@
 #   card_id:integer
 
    
-Coourse.create!([
+Course.create!([
   {name: "West Fork Disc Golf Course", address: "9095 S Broadway, Highlands Ranch, CO 80129", hole_count: 18 , course_par: 55, rating: 4.1, image: "https://www.highlandsranch.org/home/showpublishedimage/722/637331663297470000"},
   {name: "Fehringer Ranch Disc Golf Course", address: "W. Quincy Ave. and, S Simms St, Morrison, CO 80465", hole_count: 18, course_par: 57, rating: 4.2, image: "https://d22ksth68ujgu2.cloudfront.net/6828e97d1360296c97ef9cd2b83c6c21_m_IMG_7550.jpg"},
   {name: "Bird's Nest Disc Park", address: "17975 64th Parkway, Arvada, CO 80007", hole_count: 18, course_par: 54, rating: 4.1, image: "https://d22ksth68ujgu2.cloudfront.net/f68c35ac3d9718e9fb59134632e05114_m_IMG_9695.jpg"},
