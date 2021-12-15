@@ -12,8 +12,8 @@ Content-Type: application/json
 
 ### HOME user
 
-GET http://localhost:3000/userhome/2
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2Mzk1MDQ1ODJ9.bKgMlRDJYms2fAekDyxsNWZoOHHh9AmoTvWwCtAYKfI
+GET http://localhost:3000/userhome/
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2Mzk2NzYyNjB9.qggtthpHYanAzJ1Tn138OvIYTkLIcPRZdMoLZuz9CxE
 Content-Type: application/json
 
 ### CREATE users

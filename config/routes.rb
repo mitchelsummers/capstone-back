@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get "/users" => "users#index"
   get "/users/:id" => "users#show"
-  get "/userhome/:id" => "users#home"
+  get "/user" => "users#home"
   post "/users" => "users#create"
   patch "/users/:id" => "users#update"
   delete "users/:id" => "users#destroy"

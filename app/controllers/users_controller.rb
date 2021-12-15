@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_action :authenticate_admin, except: [:create]
+  # before_action :authenticate_admin, except: [:create, :home]
+  # before_action :authenticate_user, except: [:create] 
 
   def index
     users = User.all
