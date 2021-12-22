@@ -11,6 +11,11 @@ class CardsController < ApplicationController
     render json: cards
   end
 
+  # def player_cards
+  #   cards = Card.where(player.user_id: current_user.id)
+  #   render json: cards
+  # end
+
   def course_index
     cards = Card.where(course_id: params[:id])
     render json: cards

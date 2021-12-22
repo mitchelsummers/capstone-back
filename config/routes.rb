@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get "/users" => "users#index"
-  get "/users/:id" => "users#show"
-  get "/user" => "users#home"
+  get "/user" => "users#show"
+  # get "/userhome/" => "users#home"
   post "/users" => "users#create"
   patch "/users/:id" => "users#update"
   delete "users/:id" => "users#destroy"
@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get "/cards" => "cards#index"
   get "/coursecards/:id" => "cards#course_index"
   get "/usercards" => "cards#user_index"
+  # get "/playercards" => "cards#player_cards"
   get "/cards/:id" => "cards#show"
   post "/cards" => "cards#create"
   patch "/cards/:id" => "cards#update"
@@ -25,7 +26,9 @@ Rails.application.routes.draw do
   get "/players" => "players#index"
   get "/cardplayers/:id" => "players#card_index"
   get "/players/:id" => "players#show"
+  get "/playercards" => "players#player_cards"
+  get "/playercards-false" => "players#player_cards_false"
   post "/players" => "players#create"
   patch "/players/:id" => "players#update"
-  delete "players/:id" => "players#destroy"
+  delete "players/" => "players#destroy"
 end

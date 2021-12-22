@@ -7,7 +7,13 @@ Content-Type: application/json
 ### INDEX user_cards
 
 GET http://localhost:3000/usercards
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2Mzk1MDQ1ODJ9.bKgMlRDJYms2fAekDyxsNWZoOHHh9AmoTvWwCtAYKfI
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2Mzk3NzgwNDJ9.rBzjkjyUACihKCP1L5w8-V7Onh8u6aTZtfsvJrCRSPM
+Content-Type: application/json
+
+### INDEX player_cards
+
+GET http://localhost:3000/playercards
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2Mzk3NzU5ODR9.brgoDz1-GsxE-k-pQ0kaacBTVKyE9YeayveH-WarEsk
 Content-Type: application/json
 
 ### INDEX course_cards

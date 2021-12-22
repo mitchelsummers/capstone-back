@@ -14,9 +14,19 @@ class PlayersController < ApplicationController
     render json: player
   end
 
+  def player_cards
+    player = Player.where(user_id: current_user.id)
+    render json: player
+  end
+
+  # def player_cards_false
+  #   playercards = Player.find_by(user_id: current_user.id, complete: false)
+  #   render json: playercards
+  # end
+
   def create 
     player = Player.new(
-      user_id: params[:user_id],
+      user_id: current_user.id,
       card_id: params[:card_id]
     )
     if player.save
@@ -38,7 +48,7 @@ class PlayersController < ApplicationController
   end
 
   def destroy
-    player = Player.find_by(id: params[:id])
+    player = Player.find_by(user_id: current_user.id)
     player.destroy
     render json: { message: "Player Deleted" }
   end

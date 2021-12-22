@@ -12,7 +12,7 @@ Content-Type: application/json
 
 ### SHOW players
 
-GET http://localhost:3000/players/1
+GET http://localhost:3000/players/13
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2Mzk1MDQ1ODJ9.bKgMlRDJYms2fAekDyxsNWZoOHHh9AmoTvWwCtAYKfI
 Content-Type: application/json
 
@@ -35,6 +35,12 @@ Content-Type: application/json
 
 ### DESTROY players
 
-DELETE http://localhost:3000/players/:id
+DELETE http://localhost:3000/players/:
 Authorization: Bearer 
+Content-Type: application/json
+
+### INDEX player_cards
+
+GET http://localhost:3000/playercards
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMCwiZXhwIjoxNjQwMjAwNjc3fQ.OdVMm2jp8PUBFfT5psnC80uMrwXtEsphm4SvoAYu6qE
 Content-Type: application/json
